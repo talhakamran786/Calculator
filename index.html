@@ -1,0 +1,316 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+<style>
+
+#main{
+    background-color: rgba(8, 21, 133, 0.863);
+    width: 300px;
+    height: 540px ;
+    margin: 0 auto 0 auto;
+    border-radius:  50px;
+
+
+}
+
+.input::placeholder{
+    color:white;
+}
+
+.input:focus{
+    outline: none;
+}
+
+#calculator{
+padding-top: 13px;
+text-align: center;
+color: white;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.input{
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    text-align: right;
+    /* float:right; */
+    font-size: 20px;
+}
+
+
+#Result{
+
+font-size: 60px;
+float:right;
+margin-right: 40px;
+/* text-align: right; */
+color: white;
+}
+
+
+.talha{
+    height: 60px;
+    width: 60px;
+    border-radius: 80px;
+    font-size: 30px;
+    color: white;
+    /* margin-left: -16%; */
+/* padding: 10px;   
+border-radius:  50px;
+height: 60px;
+width: 60px;
+font-size: 30px; */
+background-color:rgb(240, 84, 37);
+/* color: white; */
+/* margin-left: 10px ; */
+/* margin-top: 40px; */
+
+}
+#Talha{
+background-color: white;
+color:rgb(0, 0, 0);
+font-size: 30px;
+font-weight: 500;
+
+}
+.button1{
+    background-color:transparent;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 80px;
+    font-size: 25px;
+    border: none;
+    
+
+}
+
+.button1:focus {
+    outline: none;
+background-color:rgb(240, 84, 37);
+    /* background-color: red;  */
+color: white ;
+
+
+}
+#button2{
+width: 100px;
+height: 40px;
+border-radius: 12px;
+margin-left: 10px ;
+margin-top: 10px;
+font-size: 25px;
+}
+#last{
+display: flex;
+position: relative;
+left: 90px;
+top: -20px;
+text-align: right;
+/* float: right; */
+color: white;
+font-size: 20px;
+/* margin-top: 20px; */
+}
+#button2:focus {
+    outline: none;
+}
+
+
+
+#Talha:focus{
+    outline: none;
+    /* background-color: red; */
+}
+
+.talha:focus{
+    outline: none;
+    /* background-color: white; */
+    /* color: black; */
+}
+
+#button{
+    /* margin: auto; */
+    /* background-color:rgb(226, 65, 1) ; */
+margin-top: 50px;
+margin-left: 20px;
+/* width: 205px; */
+
+
+}
+
+
+body{
+background-color:rgb(240, 84, 37);
+
+}
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+<body>
+    
+<div id="main" >
+
+<h1 id="calculator" >TALHA'S<br/> CALCULATOR </h1>
+
+<!-- <span></span> -->
+<!-- <input type="number" id="type" cl  ass="input" placeholder="Value 1" /> -->
+<!--  -->
+<!-- <br/> -->
+
+<span></span>
+<input type="" id="type2" class="input" placeholder="" />
+
+<br/>
+
+<span></span>
+<span id="Result" >0.00</span>
+
+
+<br/>
+<br/>
+
+<div id="button" >
+<button  class="talha" onclick="document.getElementById('type2').value += '*' " >x</button>
+<button  onclick="document.getElementById('type2').value += '/' " class="talha" >/</button>
+<button  class="talha" onclick="document.getElementById('type2').value += '+' " >+</button>
+<button class="talha" onclick="document.getElementById('type2').value += '-' " > - </button>
+<button  class="button1" onclick="document.getElementById('type2').value += '7' " > 7 </button>
+<button  class="button1" onclick="document.getElementById('type2').value += '8' " > 8 </button>
+<button  class="button1" onclick="document.getElementById('type2').value += '9' " > 9 </button>
+<button  onclick="CLEAR()" id="Talha" class="talha" >C</button>
+<button class="button1" onclick="document.getElementById('type2').value += '4' " > 4 </button>
+<button class="button1" onclick="document.getElementById('type2').value += '5' " > 5 </button>
+<button class="button1" onclick="document.getElementById('type2').value += '6' " > 6 </button>
+<button class="button1" onclick="document.getElementById('type2').value += '0' " > 0 </button>
+<button class="button1" onclick="document.getElementById('type2').value += '1' "  > 1 </button>
+<button class="button1" onclick="document.getElementById('type2').value += '2' " > 2 </button>
+<button class="button1" onclick="document.getElementById('type2').value += '3' " > 3 </button>
+<button class="button1" onclick="document.getElementById('type2').value += '.' " > . </button>
+<!-- <br/> -->
+<button id="button2" onclick="Calculate()"  > = </button>
+
+<div id="last" >CREATE BY <br/> TALHA KAMRAN</div>
+</div>
+<!-- 
+<button class="talha" > 9 </button>
+<button class="talha" > 8 </button>
+<button class="talha" > 7 </button>
+<br/>
+<button  class="talha"> 6 </button>
+<button  class="talha"> 5 </button>
+<button  class="talha"> 4 </button>
+<br/>
+<button  class="talha"> 3 </button>
+<button  class="talha"> 2 </button>
+<button  class="talha"> 1 </button>
+<br/>
+<button> 0 </button> -->
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!--  -->
+
+<!--  -->
+
+<!--  -->
+
+<script>
+ 
+
+ function ADD(){
+    var Data1 = document.getElementById("type").value;
+    var Data2 = document.getElementById("type2").value;
+    var Result = Number(Data1) + Number(Data2);    
+    document.getElementById("Result").innerText = Result;
+}
+   
+
+// document.getElementById(type2).value = document.getElementById(type2).value + "2"
+// document.getElementById(type2).value += "2"
+
+function SUBTRACT(){
+    var Data1 = document.getElementById("type").value;
+    var Data2 = document.getElementById("type2").value;
+    var Result  = Number(Data1)-Number(Data2)
+   document.getElementById("Result").innerText = Result;
+    
+}
+
+
+function MULTIPLY(){
+    var Data1 = document.getElementById("type").value;
+    var Data2 = document.getElementById("type2").value;
+    var Result  = Number(Data1)*Number(Data2)
+   document.getElementById("Result").innerText = Result;
+    
+}
+
+
+
+function DIVIDE(){
+    var Data1 = document.getElementById("type").value;
+    var Data2 = document.getElementById("type2").value;
+    // var Result  = Number(Data1) / Number(Data2)
+   document. getElementById("Result").innerText = Result;
+    
+}
+
+function CLEAR(){
+   
+   document.getElementById("type2").value = "";
+   document.getElementById("Result").innerText = "0.00";
+
+}
+
+function Calculate(){
+
+  var MyData = document.getElementById('type2').value;
+  MyData = eval(MyData)
+  console.log(MyData)
+  document.getElementById('Result').innerText = MyData;
+  
+
+
+}
+
+// var MyData = 8/9+6-95*52 ;
+
+// alert(MyData)
+
+
+
+
+    
+</script>
+
+</body>
+</html>
