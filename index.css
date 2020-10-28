@@ -1,0 +1,166 @@
+
+#main{
+    background-color: rgba(8, 21, 133, 0.863);
+    width: 300px;
+    height: 540px ;
+    margin: 0 auto 0 auto;
+    border-radius:  50px;
+
+
+}
+
+.input::placeholder{
+    color:white;
+}
+
+.input:focus{
+    outline: none;
+}
+
+#calculator{
+padding-top: 13px;
+text-align: center;
+color: white;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.input{
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    text-align: right;
+    /* float:right; */
+    font-size: 20px;
+}
+
+
+#Result{
+
+font-size: 60px;
+float:right;
+margin-right: 40px;
+/* text-align: right; */
+color: white;
+}
+
+
+.talha{
+    height: 60px;
+    width: 60px;
+    border-radius: 80px;
+    font-size: 30px;
+    color: white;
+    /* margin-left: -16%; */
+/* padding: 10px;   
+border-radius:  50px;
+height: 60px;
+width: 60px;
+font-size: 30px; */
+background-color:rgb(240, 84, 37);
+/* color: white; */
+/* margin-left: 10px ; */
+/* margin-top: 40px; */
+
+}
+#Talha{
+background-color: white;
+color:rgb(0, 0, 0);
+font-size: 30px;
+font-weight: 500;
+
+}
+.button1{
+    background-color:transparent;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 80px;
+    font-size: 25px;
+    border: none;
+    
+
+}
+
+.button1:focus {
+    outline: none;
+background-color:rgb(240, 84, 37);
+    /* background-color: red;  */
+color: white ;
+
+
+}
+#button2{
+width: 100px;
+height: 40px;
+border-radius: 12px;
+margin-left: 6px ;
+margin-top: 10px;
+font-size: 25px;
+}
+#last{
+display: flex;
+position: relative;
+left: 90px;
+top: 28px;
+text-align: right;
+/* float: right; */
+color: white;
+font-size: 20px;
+/* margin-top: 20px; */
+}
+#button2:focus {
+    outline: none;
+}
+
+
+
+#Talha:focus{
+    outline: none;
+    /* background-color: red; */
+}
+
+.talha:focus{
+    outline: none;
+    /* background-color: white; */
+    /* color: black; */
+}
+
+#button{
+    /* margin: auto; */
+    /* background-color:rgb(226, 65, 1) ; */
+margin-top: 50px;
+margin-left: 20px;
+/* width: 205px; */
+
+
+}
+
+#Delete{
+width: 100px;
+height: 40px;
+border-radius: 12px;
+font-size: 19px;
+float: right;
+margin-top: 12px;
+margin-right: 30px;
+}
+#Delete:focus{
+ background-color: blue ;
+color: white; 
+ 
+    border: none;
+}
+
+
+
+body{
+background-color:rgb(240, 84, 37);
+
+}
+
+
+
+
+
